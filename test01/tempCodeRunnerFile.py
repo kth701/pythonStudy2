@@ -1,0 +1,1 @@
+print(com, com*10, com*10+1, int(com*10+1))
