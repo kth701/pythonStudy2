@@ -49,6 +49,48 @@ print([1,2,3]*3)
 
 # 리스트 요소 삭제
 print(list_a)
+del list_a[0]   # del 리스트객체(인덱스번호)
+print("del=>",list_a)
+del list_a[2]
+print("del=>",list_a)
+
+# pop() => 요소(데이터)지우기
+list_a.pop(0)
+print("pop(0)=>",list_a)
+
+del list_a[:2] # 삭제 0,1
+print("del 리스트객체[:2]=>",list_a) # => [:], [1:10:2]
+
+# remove() => 데이터를 찾아서 삭제
+list_a.remove("홍길동")
+print("remove(삭제할 데이터)=>",list_a)
+# list_a.remove("홍길동121") #  x not in list
+
+# clear() : 요소(데이터) 모두 삭제
+list_a.clear()
+print("clear() =>",list_a)
+
+# sort()
+list_d = [1,2,3,4,10,90,-40,20]
+print("sort before", list_d)
+
+list_d.sort() # 오름차순 = 기본설정
+print("sort asc", list_d)
+
+list_d.sort(reverse=True)
+print("sort desc", list_d)
+
+# 리스트 내부에 요소 유무체크(in , not in)
+print("in:요소가 있는 판별:",100 in list_d)
+print("in:요소가 있는 판별:",  4 in list_d)
+print("not in:요소가 있는 판별:",100 not in list_d)
+print("not in:요소가 있는 판별:",  4 not in list_d)
+
+
+
+
+
+
 
 
 
