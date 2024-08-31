@@ -1,4 +1,4 @@
-# 리스트 내포: list안에 for와 if를 사용
+# 리스트 내포(List comprehension): list안에 for와 if를 사용
 list_a = [2,4,1,5,7]
 list_b = []
 for data in list_a:
