@@ -1,2 +1,2 @@
 
-print(nums2, type(nums2))
+print( dict_a)
