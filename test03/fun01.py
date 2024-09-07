@@ -55,7 +55,26 @@ def fun1(num1, num2, *names):
 fun1(100, 200,"홍길동")
 fun1(100,"길순이","갑순이","이순신")
 
+# 딕트형 가변인자
+def fun2(name, age, **other):
+    print(name)
+    print(age)
+    print(other)
+    for data in other:
+        print(data, other[data])
 
+fun2('동순이', 10, address='서울시', height=175, weight=70)
+
+#람다함수(Lambda function)
+# 익명함수 => lambda 매개변수 : 실행문(반환값)
+
+# 일반함수
+def my_sub(x,y):
+    return x+y
+
+print("일반함수결과:", my_sub(100,10))
+#람다함수
+print("람다함수 결과:", (lambda x,y: x-y)(50,10) )
 
 
 
