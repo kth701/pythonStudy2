@@ -62,3 +62,4 @@ texts_result = [ crean_text(text)  for text in texts]
 # 3. 최종 결과
 print(texts_result)
 
+
