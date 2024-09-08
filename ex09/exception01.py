@@ -18,3 +18,26 @@ for i in x:
         print('데이터 타입 문제가 발새하였음', i)
 
 print("-- end")
+
+
+# 중첩 예외 처리
+print("---------------")
+print("\n유형별 예외처리")
+try:
+    div = 100 / 2.53
+    print('div=%5.2f' %(div)) # 정상 처리
+
+    #div = 1000 / 0              # 1차에러
+    #f = open('c:\\text.txt')    # 2차에러
+    num = int(input('숫자 입력:'))  #3차 기타에러
+
+except ZeroDivisionError as e: # 산술적인 예외 처리
+    print('오류 정보:',e)
+except FileNotFoundError as e: # 파일 예외 처리
+    print('오류 정보:',e)
+except Exception as e: # 모든 예외 처리
+    print('오류 정보:',e)        
+finally:
+    print('항상 실행하는 영역')
+
+print("정상 종료")
