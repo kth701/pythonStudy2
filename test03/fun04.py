@@ -16,16 +16,6 @@
 
 # 함수 정의: 기능 설계
 
-# del bank_account(bal):
-    # 잔액 초기화
-    # balance = bal   
- 
-    # def getBalance():   # 잔액 확인
-    #     pass
-    # def deposit(money): # 입금하기
-    #     pass
-    # def withdraw(money):    # 출금하기
-    #     pass
 
 def bank_account(bal):  
     balance = bal               # 잔액 초기화(1000)
@@ -46,6 +36,7 @@ def bank_account(bal):
 
 # 함수 호출
 getBalance, getDeposit, getWithdraw = bank_account(1000)
+
 print(  "현재 계좌 잔액은 {} 입니다.".format(getBalance())  )
 
 print(  "입금액을 입력하세요: 15000"  )
