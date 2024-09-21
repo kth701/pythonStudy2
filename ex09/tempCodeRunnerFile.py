@@ -1,1 +1,2 @@
-e
+00')
+print(isPath)
