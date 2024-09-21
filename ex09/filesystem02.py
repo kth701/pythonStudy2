@@ -17,17 +17,18 @@ def textPro(sub_dir):
 
     for sdir in sub_dir: # ['first', 'second']
         # 디렉터리 구성 => 'test100' + '/first', 'test100' + '/second'
-        dirname = txt_data + sdir 
+        dirname = txt_data + '/'+sdir # test100/first,test100/second
         file_list = os.listdir(dirname)
 
         # 파일 구성
         for fname in file_list:
-            file_path = dirname + '/'+fname # 파일
+            # 파일: test100/first/파일이름.확장자
+            file_path = dirname + '/'+fname 
 
             # 파일 선택
             if os.path.isfile(file_path):
                 try:
-                    file = open(file_path, 'r')
+                    file = open(file_path, 'r', encoding="utf-8")
 
                     if sdir == 'first':
                         first_txt.append(file.read())
@@ -46,14 +47,14 @@ def textPro(sub_dir):
 first_txt, second_txt = textPro(sub_dir) 
 
 # 수집한 텍스트 자료 확인
-# print('first_txt길이=', len(first_txt))
-# print('second_txt길이=', len(second_txt))
+print('first_txt길이=', len(first_txt))
+print('second_txt길이=', len(second_txt))
 # 텍스트 자료 결합
-# tot_texts = first_txt + second_txt
+tot_texts = first_txt + second_txt
 
 # 전체 텍스트 내용
-# print(tot_texts)
-# print(type(tot_texts))
+print(tot_texts)
+print(type(tot_texts))
 
 
 
