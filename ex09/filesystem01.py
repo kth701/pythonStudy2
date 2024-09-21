@@ -52,10 +52,12 @@ print( '현재 위치:',os.getcwd() )
 list_dir =  os.listdir('.')
 
 for filename in list_dir:
-    if os.path.isdir(file):
+    if os.path.isdir(filename):
         print("폴더:",filename)
     else:
         print("파일:",filename)
+
+
 
 
 
