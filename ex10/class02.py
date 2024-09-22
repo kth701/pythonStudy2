@@ -27,15 +27,21 @@ class DatePro:
 # 객체 생성하기
 # 기본자료형, 숫자(정수,실수), 문자열, 부울린값 => 변수
 # 클래스로 선언된 변수 => 객체(인스턴스)
-date = DatePro(1995,10,25)
+date  = DatePro(1995,10,25)
 date2 = DatePro(1995,10,21)
 date3 = DatePro(1995,10,22)
+
 print("-- DatePro클래스로 생성된 date객체")
 print(date.content)
+
+# 멤버 변수 값을 변경
+date.content ="홍길동만세"
+print(date.content)
+
 print(date.year, date.month, date.day)
 
 # 멤버메서드 반드시 객체를 생성하여 메서드(함수)를 호출
-date.display()
+date.display()  # 다형성=> 하나의 메시지 -> 다른 기능수행
 date2.display()
 date3.display()
 
